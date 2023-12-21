@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Dashboard</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+</head>
+<body class="layout-fixed control-sidebar-slide-open">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">Home</a>
+      </li>
+     
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="nav-icon fa fa-power-off">
+          </i>
+         
+        </a>
+        
+      </li>
+      
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-light-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="dist/img/brifirst_logo.png" class="img-fluid" alt="AdminLTE Logo"  style="opacity: .8">
+      <!-- <span class="brand-text font-weight-light"> 3</span> -->
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar flex-column">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Raihan Muhammad</a>
+        </div>
+      </div>
+
+     
+
+      <!-- Sidebar Menu -->
+      <div class="mt-2" style="flex-direction: column;
+      justify-content: space-between;">
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column text-sm" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+                with font-awesome or any other icon font library -->
+            <li class="nav-item menu-open">
+              <a href="#" class="nav-link active">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  Dashboard
+                  <!-- <i class="right fas fa-angle-left"></i> -->
+                </p>
+              </a>
+              
+            </li>
+          
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-copy"></i>
+                <p>
+                  Test Case
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/testcase.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Create Test Case</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/drafts.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Drafts</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/submitted.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Submitted Test Case </p>
+                  </a>
+                </li>
+                
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-edit"></i>
+                <p>
+                  Activity Report
+                  <!-- <i class="fas fa-angle-left right"></i> -->
+                </p>
+              </a>
+              
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-book"></i>
+                <p>
+                  Assesment
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/examples/invoice.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Invoice</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/profile.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Profile</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/e-commerce.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>E-commerce</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/projects.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Projects</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/project-add.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Project Add</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/project-edit.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Project Edit</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/project-detail.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Project Detail</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/contacts.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Contacts</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/faq.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>FAQ</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/contact-us.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Contact us</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-plus-square"></i>
+                <p>
+                  Extras
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>
+                      Login & Register v1
+                      <i class="fas fa-angle-left right"></i>
+                    </p>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="pages/examples/login.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Login v1</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="pages/examples/register.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Register v1</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="pages/examples/forgot-password.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Forgot Password v1</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="pages/examples/recover-password.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Recover Password v1</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>
+                      Login & Register v2
+                      <i class="fas fa-angle-left right"></i>
+                    </p>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="pages/examples/login-v2.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Login v2</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="pages/examples/register-v2.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Register v2</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="pages/examples/forgot-password-v2.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Forgot Password v2</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="pages/examples/recover-password-v2.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Recover Password v2</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/lockscreen.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Lockscreen</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/legacy-user-menu.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Legacy User Menu</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/language-menu.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Language Menu</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/404.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Error 404</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/500.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Error 500</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/pace.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Pace</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/blank.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Blank Page</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="starter.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Starter Page</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            
+          </ul>
+        </nav>
+        <nav class="mt-2">
+          <ul class = "nav nav-pills nav-sidebar flex-column text-sm">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-power-off"></i>
+                <p>
+                  Logout
+                  <!-- <i class="fas fa-angle-left right"></i> -->
+                </p>
+              </a>
+              
+            </li>
+          </ul>
+        </nav>
+      </div>
+      
+      
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Dashboard FNT</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row justify-content-center py-3">
+          <div class="col-lg-3 mx-4">
+            <div class="card text-white bg-primary text-center"  style="border-radius: 8%";>
+              <div class="card-body text-center">
+                <h5 class="card-text">Productivity</h5>
+                <p class="card-text">Team member Rank by test case
+                </p>
+              </div>
+            </div>
+            <!-- logo rank here -->
+            <a class="img-fluid">
+              <img src="dist/img/optimization.png" class="img-fluid d-block mx-auto" style="max-width: 70%; opacity: .64">
+              <!-- <span class="brand-text font-weight-light"> 3</span> -->
+            </a>
+
+            <!-- logo rank here -->
+          </div>
+          <!-- Table Rank Here -->
+          <div class="col-lg-6 mx-4">
+            <table class="table" id="table_rank">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nama</th>
+              <th scope="col" class="text-center">Total test case</th>
+              <!-- <th scope="col" class="text-center">Velocity</th> -->
+              <th scope="col" class="text-center">Last Sprint test case</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Muhammad Ulil Albab</td>
+              <td class="text-center">350</td>
+              <!-- <td class="text-center">30</td> -->
+              <td class="text-center">15</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Farrel Bismoko</td>
+              <td class="text-center">300</td>
+              <!-- <td class="text-center">27</td> -->
+              <td class="text-center">30</td>
+            </tr>
+            
+            <tr>
+              <th scope="row">3</th>
+              <td>Farhan Laurenzo</td>
+              <td class="text-center">300</td>
+              <!-- <td class="text-center">25</td> -->
+              <td class="text-center">27</td>
+            </tr>
+            
+          </tbody>
+        </table>
+
+          </div>
+          <!-- Table Rank End Here -->
+        </div>
+        
+      </div>
+      <div class="container-fluid ">
+        <!-- Small boxes (Stat box) -->
+        <div class="row mx-1">
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+              <div class="inner">
+                <h3>950</h3>
+
+                <p>Test Case Performed</p>
+              </div>
+              <div class="icon">
+                <i class="fa fa-list"></i>
+              </div>
+              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <!-- <h3>15<sup style="font-size: 20px">%</sup></h3> -->
+                <h3>45</h3>
+
+                <p>Error & Bug Fixed</p>
+              </div>
+              <div class="icon">
+                <i class="fa fa-bug"></i>
+              </div>
+              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+                <h3>20</h3>
+
+                <p>UAT Error</p>
+              </div>
+              <div class="icon">
+                <i class="fa fa-check"></i>
+              </div>
+              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-danger">
+              <div class="inner">
+                <h3>300</h3>
+
+                <p>Module/Feature</p>
+              </div>
+              <div class="icon">
+                <i class="fa fa-layer-group"></i>
+              </div>
+              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+        </div>
+        <!-- /.row -->
+        <!-- table test-case -->
+        <div class="card mx-2 my-5">
+          <div class="card-header border-transparent">
+            <h3 class="card-title">Latest Test Case</h3>
+
+            <div class="card-tools">
+              <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                <i class="fas fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-tool" data-card-widget="remove">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+          <!-- /.table test-header -->
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <table class="table m-0">
+                <thead>
+                <tr>
+                  <th>Test ID</th>
+                  <th>Module</th>
+                  <th>Feature</th>
+                  <th>Description</th>
+                  <th>Date Created</th>
+                  <th>Status</th>
+                 
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td><a href="pages/examples/invoice.html">PM-3-1-1-1</a></td>
+                  <td>PAPM</td>
+                  <td>FTP</td>
+                  <td>Run FTP Calculation - Matched Maturity</td>
+                  <td>01/03/2023</td>
+                  <td><span class="badge badge-success">Success</span></td>
+                  
+                </tr>
+                <tr>
+                  <td><a href="pages/examples/invoice.html">PM-3-1-1-2</a></td>
+                  <td>PAPM</td>
+                  <td>FTP</td>
+                  <td>Run FTP Calculation - Straight Term</td>
+                  <td>01/03/2023</td>
+                  <td><span class="badge badge-success">Success</span></td>
+                  
+                </tr>
+                <tr>
+                  <td><a href="pages/examples/invoice.html">PM-3-1-1-3</a></td>
+                  <td>PAPM</td>
+                  <td>FTP</td>
+                  <td>Run FTP Calculation - Weighted Average</td>
+                  <td>01/03/2023</td>
+                  <td><span class="badge badge-danger">Error</span></td>
+                  
+                </tr>
+                <tr>
+                  <td><a href="pages/examples/invoice.html">PM-3-1-1-4</a></td>
+                  <td>PAPM</td>
+                  <td>FTP</td>
+                  <td>Run FTP Calculation - FTP Moving Average</td>
+                  <td>01/03/2023</td>
+                  <td><span class="badge badge-success">Success</span></td>
+                  
+                </tr>
+                <tr>
+                  <td><a href="pages/examples/invoice.html">PM-3-1-1-5</a></td>
+                  <td>PAPM</td>
+                  <td>FTP</td>
+                  <td>Run FTP Calculation - Reconciliation Matched Maturity</td>
+                  <td>01/03/2023</td>
+                  <td><span class="badge badge-warning">Pending</span></td>
+                </tr>
+                
+                
+                </tbody>
+              </table>
+            </div>
+            <!-- /.table-responsive -->
+          </div>
+          <!-- /.card-body -->
+          <div class="card-footer clearfix">
+            <a href="javascript:void(0)" class="btn btn-sm btn-info float-left">Create New</a>
+            <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-right">View All Test Case</a>
+          </div>
+          <!-- /.table test-footer -->
+        <!-- /.row (main row) -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.2.0
+    </div>
+  </footer>
+
+  
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+<link rel="stylesheet" href="style.css">
+</body>
+</html>
